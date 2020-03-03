@@ -21,11 +21,10 @@ import java.util.List;
 
  public class MainActivity extends AppCompatActivity {
      private Spinner spinner1, spinner2;
-     private Button btnSubmit;
      EditText etmessage;
      String alert1,alert2,alert3,alert4;
-     private RadioGroup radioSexGroup;
-     private RadioButton radioSexButton;
+     private RadioGroup radiotoppingsGroup;
+     private RadioButton radiotoppingsButton;
 
      @Override
      protected void onCreate(Bundle savedInstanceState) {
@@ -73,17 +72,16 @@ import java.util.List;
      public void submit(View view) {
          spinner1 = (Spinner) findViewById(R.id.spinner1);
          spinner2 = (Spinner) findViewById(R.id.spinner2);
-         btnSubmit = (Button) findViewById(R.id.btnsubmit);
          etmessage = findViewById(R.id.etmessage);
 
-         radioSexGroup = (RadioGroup) findViewById(R.id.radiogroupshape);
+         radiotoppingsGroup = (RadioGroup) findViewById(R.id.radiogroupshape);
          // get selected radio button from radioGroup
-         int selectedId = radioSexGroup.getCheckedRadioButtonId();
+         int selectedId = radiotoppingsGroup.getCheckedRadioButtonId();
 
          // find the radiobutton by returned id
-         radioSexButton = (RadioButton) findViewById(selectedId);
+         radiotoppingsButton = (RadioButton) findViewById(selectedId);
 
-         alert1 = radioSexButton.getText().toString();
+         alert1 = radiotoppingsButton.getText().toString();
          alert2 = spinner1.getSelectedItem().toString();
          alert3 = spinner2.getSelectedItem().toString();
          alert4 = etmessage.getText().toString();
