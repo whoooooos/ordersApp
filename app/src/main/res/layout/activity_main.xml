@@ -111,12 +111,14 @@
                 android:layout_marginLeft="25dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textSize="20dp"
                 android:text="Circle"
                 android:textColor="@color/Textcolor" />
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="20dp"
                 android:text="Square"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/Textcolor"
@@ -128,6 +130,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textSize="20dp"
                 android:layout_marginLeft="25dp"
                 android:text="Star"
                 android:textColor="@color/Textcolor"
@@ -224,7 +227,7 @@
             android:hint="Enter Message Here"
             android:textAlignment="center"
             android:id="@+id/etmessage"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColorHint="@color/Textcolor"
             android:textColor="@color/Textcolor"
             />

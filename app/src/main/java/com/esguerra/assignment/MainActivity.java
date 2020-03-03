@@ -4,7 +4,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -51,8 +54,8 @@ import java.util.List;
          list1.add("Caramel");
          list1.add("Cheese");
          ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this,
-                 android.R.layout.simple_spinner_item, list1);
-         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                 R.layout.spinner_item, list1);
+         dataAdapter1.setDropDownViewResource(R.layout.spinner_item);
          spinner1.setAdapter(dataAdapter1);
      }
      public void addItemsOnSpinner2() {
@@ -63,8 +66,8 @@ import java.util.List;
          list.add("Crystal");
          list.add("Gulaman");
          ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-                 android.R.layout.simple_spinner_item, list);
-         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                 R.layout.spinner_item, list);
+         dataAdapter.setDropDownViewResource(R.layout.spinner_item);
          spinner2.setAdapter(dataAdapter);
      }
 
@@ -88,8 +91,8 @@ import java.util.List;
 
          AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
          alertDialogBuilder.setMessage("Shape: " + alert1 + "\n" + "Flavor: " + alert2+ "\n" +
-                 "Toppigs: " + alert3 + "\n" + "Message: " + alert4	    );
-         alertDialogBuilder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                 "Toppings: " + alert3 + "\n" + "Message: " + alert4	    );
+         alertDialogBuilder.setPositiveButton("Close", new DialogInterface.OnClickListener() {
              @Override
              public void onClick(DialogInterface dialog, int which) {
 
@@ -97,8 +100,14 @@ import java.util.List;
          });
          AlertDialog alertDialog = alertDialogBuilder.create();
          alertDialog.show();
-         TextView msgTxt = (TextView) alertDialog.findViewById(android.R.id.message);
-         msgTxt.setTextSize((float) 16.0);
+         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+         alertDialog.getWindow().getAttributes();
+         TextView textView = (TextView) alertDialog.findViewById(android.R.id.message);
+         textView.setTextSize(50);
+         textView.setTextColor(Color.RED);
+         textView.setGravity(Gravity.CENTER);
+
+
 
 
      }
