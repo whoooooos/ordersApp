@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Assignment</string>
+
+
+        <string name="flavor_prompt">Choose a Flavor</string>
+
+        <string-array name="flavor_arrays">
+            <item>Chocolate</item>
+            <item>Caramel</item>
+            <item>Cheese</item>
+            <item>Dark Chocolate</item>
+
+        </string-array>
+    <string name="toppings_prompt">Choose a Flavor</string>
+
+    <string-array name="toppings_arrays">
+        <item>Kisses</item>
+        <item>Pearl</item>
+        <item>Gulaman</item>
+        <item>Oyster-Sauce</item>
+
+    </string-array>
+
+
+</resources>
+
