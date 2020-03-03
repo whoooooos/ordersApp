@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,4 +11,18 @@
     android:textColor="#F40404"
     android:fontFamily="@font/corbel"
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:padding="11dp"
+    android:textColor="#F40404"
+    android:fontFamily="@font/corbel"
+
+>>>>>>> f9123f7649cc1ef516f7baaa50e09b1423a7230c
     />
